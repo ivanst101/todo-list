@@ -7,8 +7,13 @@
 
 :root {
     --grey: #F7F7F7;
-    --dark-grey: #e0e0e0;
+    --light-grey: #e0e0e0;
     --dark-red: #DB4C3F;
+    --confirm-green: #15b947;
+}
+
+.todo {
+    color: #fff;
 }
 
 header {
@@ -40,6 +45,8 @@ header {
     background-color: #fff;
     padding: 15px 25px;
     margin: 10px 50px;
+
+    position: relative;
 }
 
 
@@ -52,6 +59,8 @@ svg {
     margin: 0 auto;
 }
 
+
+
 button {
     padding: 10px;
     margin: 10px;
@@ -60,11 +69,68 @@ button {
 
 
     border: none;
-    background-color: var(--dark-grey);
+    background-color: var(--light-grey);
     border-radius: 7px;
-    color: var(--dark-red);
+    color: #000;
 }
 
 h2 {
     margin-top: 35px;
 }
+
+
+.tasks {
+    margin: 20px;
+}
+
+.outputDiv {
+    margin: 30px;
+}
+
+.outputDiv * {
+    margin: 10px;
+}
+
+
+.line {
+    height: 1px;
+    background-color: var(--dark-red);
+}
+
+.task-name {
+    flex: 1;
+}
+
+#dialog-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+}
+
+form div {
+    margin: 15px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#confirm, #confirmProject {
+    background-color: var(--confirm-green);
+    color: #fff;
+}
+#close {
+    background-color: var(--dark-red);
+    color: #fff;
+}
+
+
+
